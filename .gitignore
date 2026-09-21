@@ -216,3 +216,16 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Environment / secrets
+.env
+*.env
+**/*.env
+
+# Python cache
+__pycache__/
+**/__pycache__/
+*.py[cod]
+
+# Local vector database
+data/vector_db/
