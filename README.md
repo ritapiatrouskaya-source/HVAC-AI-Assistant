@@ -97,3 +97,232 @@ Manufacturer Documentation
                   │
                   ▼
           Source + Page
+
+```
+
+For model-specific questions, the system gives priority to the selected equipment model and its corresponding catalog page before falling back to semantic retrieval.
+
+---
+
+## 📚 Knowledge Base
+
+The current knowledge base is based on Daikin technical documentation:
+
+- General Catalog
+- Engineering Data
+- Installation Manual
+- Service Manual
+
+### Current Scope
+
+The current application focuses on:
+
+**Daikin Single-Split / Single-Zone systems**
+
+Covered topics include:
+
+- Equipment specifications
+- Installation requirements
+- Refrigerant and piping
+- Operating conditions
+- Technical parameters
+- Error codes
+- Troubleshooting information
+
+---
+
+## 🛠 Technology Stack
+
+| Technology | Purpose |
+|---|---|
+| Python | Core application |
+| Streamlit | Web interface |
+| LangChain | RAG pipeline |
+| Chroma | Vector database |
+| HuggingFace Embeddings | Semantic embeddings |
+| Ollama | Local LLM inference |
+| Llama 3.1 | Language model |
+| PyMuPDF | PDF processing |
+| GitHub | Version control |
+
+### Embedding Model
+
+```text
+BAAI/bge-small-en-v1.5
+```
+
+### Language Model
+
+```text
+Llama 3.1
+```
+
+running through:
+
+```text
+Ollama
+```
+
+---
+
+## 📁 Project Structure
+
+```text
+HVAC-AI-Assistant/
+│
+├── app.py
+├── README.md
+├── requirements.txt
+├── LICENSE
+├── .gitignore
+│
+├── assets/
+│   └── back.png
+│
+├── data/
+│   └── indexes/
+│       ├── catalog_index.json
+│       └── equipment_database.json
+│
+├── search/
+│   └── search_equipment.py
+│
+└── src/
+    ├── chunking.py
+    ├── config.py
+    ├── embeddings.py
+    ├── equipment.py
+    ├── llm.py
+    ├── loader.py
+    ├── rag.py
+    ├── retriever.py
+    ├── table_parser.py
+    └── vector_store.py
+```
+
+---
+
+## ⚙️ Installation
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/ritapiatrouskaya-source/HVAC-AI-Assistant.git
+cd HVAC-AI-Assistant
+```
+
+### 2. Create a virtual environment
+
+```bash
+python -m venv .venv
+```
+
+Activate it on Windows:
+
+```bash
+.venv\Scripts\activate
+```
+
+### 3. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Install Ollama
+
+Install Ollama and make sure it is running locally.
+
+Pull the required model:
+
+```bash
+ollama pull llama3.1
+```
+
+### 5. Run the application
+
+```bash
+streamlit run app.py
+```
+
+The application will then be available in your browser.
+
+---
+
+## 💬 Example
+
+After selecting an HVAC model, users can ask questions such as:
+
+```text
+What does error U4 mean?
+```
+
+The system retrieves the relevant information from the technical documentation and provides an answer together with source references.
+
+---
+
+## 🔐 Data & Security
+
+Manufacturer documentation is not included in this repository.
+
+The repository contains the application source code, assets and structured index data used by the project.
+
+Sensitive information such as API keys, environment files and local databases should never be committed to Git.
+
+The `.gitignore` configuration excludes:
+
+```text
+.env
+*.env
+__pycache__/
+data/vector_db/
+```
+
+---
+
+## 🎯 Project Goals
+
+The main goal of the project is to demonstrate how Retrieval-Augmented Generation can be applied to technical HVAC documentation.
+
+The project combines:
+
+- Information retrieval
+- Natural Language Processing
+- Vector databases
+- Large Language Models
+- PDF document processing
+- Structured data extraction
+- Technical knowledge retrieval
+- Interactive web applications
+
+---
+
+## 🔮 Future Improvements
+
+Possible future extensions include:
+
+- HVAC equipment recommendation based on room parameters
+- Installation and troubleshooting workflows
+- Error-code diagnostic assistance
+- Support for additional manufacturers
+- Expanded equipment databases
+- Improved document visualization
+- Advanced filtering and comparison of equipment models
+
+---
+
+## 👩‍💻 Author
+
+**Rita Piatrouskaya**
+
+Data Science / AI
+
+[GitHub](https://github.com/ritapiatrouskaya-source)
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+See the [LICENSE](LICENSE) file for details.
