@@ -199,54 +199,6 @@ HVAC-AI-Assistant/
     ├── table_parser.py
     └── vector_store.py
 ```
-
----
-
-## ⚙️ Installation
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/ritapiatrouskaya-source/HVAC-AI-Assistant.git
-cd HVAC-AI-Assistant
-```
-
-### 2. Create a virtual environment
-
-```bash
-python -m venv .venv
-```
-
-Activate it on Windows:
-
-```bash
-.venv\Scripts\activate
-```
-
-### 3. Install dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### 4. Install Ollama
-
-Install Ollama and make sure it is running locally.
-
-Pull the required model:
-
-```bash
-ollama pull llama3.1
-```
-
-### 5. Run the application
-
-```bash
-streamlit run app.py
-```
-
-The application will then be available in your browser.
-
 ---
 
 ## 💬 Example
