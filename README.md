@@ -18,12 +18,7 @@ The application provides information such as:
 
 - Cooling capacity
 - Heating capacity
-- Indoor and outdoor unit models
-- Refrigerant
 - Pipe sizes
-- Maximum piping length
-- Operating temperature ranges
-- Dimensions
 - Sound levels
 - Other technical specifications
 
