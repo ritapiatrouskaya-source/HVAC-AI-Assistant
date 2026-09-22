@@ -263,6 +263,11 @@ Possible future extensions include:
 
 ---
 
+## 🔮 Streamlit-App (Screenshot)
+
+<img width="906" height="535" alt="image" src="https://github.com/user-attachments/assets/6dee5db2-7baf-4443-b25c-6bf9873b37bf" />
+
+
 ## 👩‍💻 Author
 
 **Rita Piatrouskaya**
