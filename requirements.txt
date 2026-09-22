@@ -4,6 +4,7 @@ langchain-community
 langchain-huggingface
 langchain-chroma
 langchain-openai
+langchain-ollama
 chromadb
 sentence-transformers
 pymupdf
