@@ -211,6 +211,11 @@ What does error U4 mean?
 
 The system retrieves the relevant information from the technical documentation and provides an answer together with source references.
 
+### Streamlit-App (Screenshot)
+
+<img width="906" height="535" alt="image" src="https://github.com/user-attachments/assets/6dee5db2-7baf-4443-b25c-6bf9873b37bf" />
+
+
 ---
 
 ## 🔐 Data & Security
@@ -262,10 +267,6 @@ Possible future extensions include:
 - Advanced filtering and comparison of equipment models
 
 ---
-
-## 🔮 Streamlit-App (Screenshot)
-
-<img width="906" height="535" alt="image" src="https://github.com/user-attachments/assets/6dee5db2-7baf-4443-b25c-6bf9873b37bf" />
 
 
 ## 👩‍💻 Author
